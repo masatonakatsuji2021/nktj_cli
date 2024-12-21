@@ -1,0 +1,9 @@
+{
+    "name": "mn_cli",
+    "description": "TypeScript(Node.js) Consoller.",
+    "author": "masato nakatsuji",
+    "version": "1.0.0",
+    "devDependencies": {
+        "@types/node": "^20.10.1"
+    }
+}

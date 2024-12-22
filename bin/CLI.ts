@@ -21,8 +21,8 @@ export class CLI {
         return indentStr;
     }
 
-    public static getArgs() : Object{
-        
+    private static __getArgs() {
+
         let options = {
             _any : [],
         };
@@ -49,8 +49,25 @@ export class CLI {
         }
 
         if(field) options[field] = true;
-
         return options;
+    }
+
+    /**
+     * ***getArgsOption*** : Get option setting value from command argument value.
+     * @returns 
+     */
+    public static getArgsOPtion(): Object {
+        const args = this.__getArgs();
+        delete args._any;
+        return args;
+    }
+
+    /**
+     * ***getArgs*** : Get command argument value.
+     * @returns 
+     */
+    public static getArgs() : Array<string>{
+        return this.__getArgs()._any;
     }
 
     /**

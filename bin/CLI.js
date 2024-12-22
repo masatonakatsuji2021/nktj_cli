@@ -16,7 +16,7 @@ class CLI {
         }
         return indentStr;
     }
-    static getArgs() {
+    static __getArgs() {
         let options = {
             _any: [],
         };
@@ -44,6 +44,28 @@ class CLI {
             options[field] = true;
         return options;
     }
+    /**
+     * ***getArgsOption*** : Get option setting value from command argument value.
+     * @returns
+     */
+    static getArgsOPtion() {
+        const args = this.__getArgs();
+        delete args._any;
+        return args;
+    }
+    /**
+     * ***getArgs*** : Get command argument value.
+     * @returns
+     */
+    static getArgs() {
+        return this.__getArgs()._any;
+    }
+    /**
+     * ***setIndent*** : Setting the indent amount
+     * Used when changing the number of indents after opening
+     * @param {number} indent Indent
+     * @returns
+     */
     static setIndent(indent) {
         this.indent = indent;
         return CLI;
@@ -65,6 +87,10 @@ class CLI {
         string = string + this.setBr();
         return CLI.out(string, color);
     }
+    /**
+     * ***br*** : Newline stdout.
+     * @returns {CLI}
+     */
     static br() {
         return CLI.outn(this.getIndentBr());
     }
@@ -86,6 +112,11 @@ class CLI {
         });
     }
     ;
+    /**
+     * ***outData** : Parse object data to standard output.
+     * @param {Object} data The object data to parse
+     * @returns
+     */
     static outData(data) {
         let c = Object.keys(data);
         let maxKeyLength = 0;

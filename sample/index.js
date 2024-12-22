@@ -55,5 +55,6 @@ const __1 = require("../");
     })();
     __1.CLI.waitClose(__1.CLI.setColor("OK", __1.Color.Green));
     __1.CLI.outn("..... Complete!");
-    __1.CLI.outData(__1.CLI.getArgs());
+    console.log(__1.CLI.getArgs());
+    console.log(__1.CLI.getArgsOPtion());
 }))();

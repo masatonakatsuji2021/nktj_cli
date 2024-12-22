@@ -61,5 +61,7 @@ import { CLI, Color } from "../";
 
     CLI.outn("..... Complete!");
 
-    CLI.outData(CLI.getArgs());
+    console.log(CLI.getArgs());
+    console.log(CLI.getArgsOPtion());
+
 })();

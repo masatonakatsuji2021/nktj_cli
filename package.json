@@ -2,10 +2,13 @@
     "name": "nktj_cli",
     "description": "TypeScript(Node.js) Consoller.",
     "author": "masato nakatsuji",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/masatonakatsuji2021/nktj_cli.git"
+    },
+    "dependencies": {
+        "@types/node": "^20.10.1"
     },
     "devDependencies": {
         "@types/node": "^20.10.1"

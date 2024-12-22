@@ -3,6 +3,10 @@
     "description": "TypeScript(Node.js) Consoller.",
     "author": "masato nakatsuji",
     "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/masatonakatsuji2021/nktj_cli.git"
+    },
     "devDependencies": {
         "@types/node": "^20.10.1"
     }

@@ -45,6 +45,13 @@ class CLI {
         return options;
     }
     /**
+     * ***getArgsOPtion*** : Get option setting value from command argument value.
+     * @returns
+     */
+    static getArgsOPtion() {
+        return this.getArgsOption();
+    }
+    /**
      * ***getArgsOption*** : Get option setting value from command argument value.
      * @returns
      */

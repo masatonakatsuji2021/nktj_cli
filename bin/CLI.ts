@@ -53,6 +53,14 @@ export class CLI {
     }
 
     /**
+     * ***getArgsOPtion*** : Get option setting value from command argument value.
+     * @returns 
+     */
+    public static getArgsOPtion() : object {
+        return this.getArgsOption();
+    }
+
+    /**
      * ***getArgsOption*** : Get option setting value from command argument value.
      * @returns 
      */

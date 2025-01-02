@@ -56,7 +56,7 @@ export class CLI {
      * ***getArgsOption*** : Get option setting value from command argument value.
      * @returns 
      */
-    public static getArgsOPtion(): Object {
+    public static getArgsOption(): Object {
         const args = this.__getArgs();
         delete args._any;
         return args;
@@ -141,7 +141,7 @@ export class CLI {
      * @returns {CLI}
      */
     public static br() : typeof CLI{
-        return CLI.outn(this.getIndentBr());
+        return CLI.out(this.getIndentBr());
     }
 
     public static setBr() : string {
